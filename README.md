@@ -33,7 +33,7 @@ Both key pair sets are composed of three components: the shared large 32 bit pri
 Messages are encrypted using power modulus operations. The ciphertext consists of an initialization block is created using a randomly generated number and then followed by the message block, both of which are power modulated with the public prime number.
 
 **C<sub>1</sub> = g<sup>k</sup> mod p**
-**C<sub>2</sub> = e2<sup>k</sub>∙m mod p**
+**C<sub>2</sub> = e2<sup>k</sub> ∙ m mod p**
 
 The ciphertext is decrypted by taking the inverse of the exponentiated initialized block and the message block, then power modulated with the public prime component to get the plaintext.
 
@@ -62,7 +62,7 @@ To decrypt:
 python3 main.py -d ctext.txt dtext.txt prikey.txt
 ```
 
---References--
+## References
 
 [Miller-Rabin function](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
 
