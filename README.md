@@ -65,7 +65,7 @@ python3 main.py -d ctext.txt dtext.txt prikey.txt
 
 ## References
 
-[SSH DH Group Exchange]https://tools.ietf.org/html/rfc4419#ref-MENEZES
+[SSH DH Group Exchange](https://tools.ietf.org/html/rfc4419#ref-MENEZES)
 
 [Miller-Rabin function](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
 
