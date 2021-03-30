@@ -15,14 +15,16 @@
 This program is an asymetric key system in which the public and private keys are generated using an algorithm developed by Menzes from the "Handbook of Applied Cryptography." 
 
 > RFC 4419 SSH DH Group Exchange March 2006
+> 
 > Appendix A: Generation of Safe Primes
+> 
 > The "Handbook of Applied Cryptography" [MENZES] lists the following algorithm to generate a k-bit safe prime p. It has been modified so that 2 is a generator for the multiplicative group mod p.
+> 
 >   1. Do the following:
 >
 >     1. Select a random (k-1)-bit prime q (Rabin-Miller), so that q mod 12 = 5.
 >
->     2. Compute p = 2q + 1, and test whether p is prime (using,
-the Rabin-Miller test).
+>     2. Compute p = 2q + 1, and test whether p is prime (using, the Rabin-Miller test).
 >
 >   2. Repeat until p is prime.
 
@@ -56,9 +58,12 @@ python3 main.py -e ptext.txt ctext.txt pubkey.txt
 To decrypt:
 
 *first arg is input file for ciphertext, second arg is output file for plaintext, third arg is to obtain private key*
+```
 python3 main.py -d ctext.txt dtext.txt prikey.txt
+```
 
 --References--
+
 [Miller-Rabin function](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
 
 [Test plaintext](https://en.wikipedia.org/wiki/Zino%27s_petrel)
