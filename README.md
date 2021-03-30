@@ -12,7 +12,7 @@
 
 ### Description
 
-This program is an asymetric key system in which the public and private keys are generated using an algorithm developed by Menzes from the "Handbook of Applied Cryptography." 
+This program is an asymetric key system in which the public and private keys are generated using an algorithm posted by the Diffie-Hellman Group Exchange which was developed by Menzes from the "Handbook of Applied Cryptography." 
 
 > RFC 4419 SSH DH Group Exchange March 2006
 > 
@@ -64,6 +64,8 @@ python3 main.py -d ctext.txt dtext.txt prikey.txt
 ```
 
 ## References
+
+[SSH DH Group Exchange]https://tools.ietf.org/html/rfc4419#ref-MENEZES
 
 [Miller-Rabin function](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)
 
