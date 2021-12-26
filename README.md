@@ -1,4 +1,4 @@
-# CS 488: Cryptography - Public Key Cryptosystem
+# Public Key Cryptosystem
 
 ### Files
 
